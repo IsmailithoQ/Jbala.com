@@ -34,3 +34,36 @@ footer {
   text-align: center;
   padding: 10px;
 }
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 15px;
+  margin: 15px;
+}
+
+main {
+  background: white;
+  padding: 15px;
+}
+
+aside {
+  background: #ffffff;
+  padding: 15px;
+  border-right: 3px solid #0a1e3f;
+}
+
+.main-news h2 {
+  color: #0a1e3f;
+}
+
+.news-list ul,
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li,
+aside li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
