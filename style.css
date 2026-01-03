@@ -67,3 +67,13 @@ aside li {
   padding: 8px 0;
   border-bottom: 1px solid #ddd;
 }
+.main-news img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.main-news h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
