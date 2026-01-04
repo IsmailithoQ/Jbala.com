@@ -1,79 +1,108 @@
+/* إعدادات عامة */
 body {
-  direction: rtl;
-  font-family: Tahoma, Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  direction: rtl;
 }
 
 header {
-  background: #0a1e3f;
-  color: white;
-  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-header h1 {
-  margin: 0;
-}
-
-nav a {
-  color: #ffd700;
-  margin-left: 10px;
-  text-decoration: none;
+header .logo {
+  font-size: 1.5em;
   font-weight: bold;
 }
 
-section {
-  background: white;
-  margin: 15px;
-  padding: 15px;
-}
-
-footer {
-  background: #222;
-  color: #ccc;
-  text-align: center;
-  padding: 10px;
-}
-.container {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 15px;
-  margin: 15px;
-}
-
-main {
-  background: white;
-  padding: 15px;
-}
-
-aside {
-  background: #ffffff;
-  padding: 15px;
-  border-right: 3px solid #0a1e3f;
-}
-
-.main-news h2 {
-  color: #0a1e3f;
-}
-
-.news-list ul,
-aside ul {
+header nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
 }
 
-.news-list li,
-aside li {
-  padding: 8px 0;
-  border-bottom: 1px solid #ddd;
+header nav ul li {
+  margin-right: 15px;
 }
-.main-news img {
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #f4a261;
+}
+
+/* القسم الرئيسي */
+main {
+  padding: 20px;
+}
+
+.featured-news {
+  margin-top: 20px;
+}
+
+.featured-news h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.news-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.news-item {
+  background: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+
+.news-item img {
   width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+  height: 200px;
+  object-fit: cover;
 }
 
-.main-news h2 {
-  font-size: 24px;
-  margin: 10px 0;
+.news-item h3 {
+  margin: 10px;
+  font-size: 1.2em;
 }
+
+.news-item p {
+  margin: 0 10px 10px;
+  color: #555;
+}
+
+.news-item .read-more {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.news-item .read-more:hover {
+  background: #f4a261;
+}
+
+/* الفوتر */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
